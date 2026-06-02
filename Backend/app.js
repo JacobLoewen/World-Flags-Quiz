@@ -8,6 +8,8 @@ const PORT = 3000;
 
 // Use CORS
 app.use(cors());
+app.use('/countriesImages',
+    express.static(path.join(__dirname, '..', 'countriesImages')));
 
 // Serve static files from the 'Frontend' directory
 app.use(express.static(path.join(__dirname, '..', 'Frontend')));
@@ -30,13 +32,18 @@ app.get('/randomImage', (req, res) => {
         }
         const randomIndex = Math.floor(Math.random() * files.length);
         const randomImage = files[randomIndex];
-        const imagePath = path.join(imagesDir, randomImage);
+        // const imagePath = path.join(imagesDir, randomImage);
+        res.json({
+            filename: randomImage,
+            imageUrl: `/countriesImages/${randomImage}`
+        });
 
-        res.sendFile(imagePath);
+        // res.sendFile(imagePath);
     });
     // res.sendFile(path.join(__dirname, 'Frontend','index.html')) 
     // The above line results in an error as you are sending a file path to something that is not the image!   
 });
+
 
 // Start the server
 app.listen(PORT, () => {
