@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 let found = false;
                 lines.forEach((line, index) => {
-                    if (line.trim() === name) {
+                    if (line.trim().toLowerCase() === name.trim().toLowerCase()) {
                         console.log("The name is in position " + (index + 1) + " of the text document");
                         found = true;
                     }
