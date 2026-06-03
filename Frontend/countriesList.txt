@@ -7,12 +7,12 @@ Albania
 Armenia
 Angola
 Antarctica
-Argentina,Heard Island and McDonald Islands
+Argentina
 American Samoa
 Austria
 Australia
 Aruba
-Åland Islands
+Åland Islands,Aland Islands
 Azerbaijan
 Bosnia and Herzegovina
 Barbados
@@ -23,7 +23,7 @@ Bulgaria
 Bahrain
 Burundi
 Benin
-Saint Barthélemy
+Saint Barthélemy,Saint Barthelemy
 Bermuda
 Brunei
 Bolivia
@@ -41,7 +41,7 @@ Democratic Republic of the Congo,DR Congo
 Central African Republic
 Republic of the Congo
 Switzerland
-Côte d'Ivoire
+Côte d'Ivoire,Cote d'Ivoire
 Cook Islands
 Chile
 Cameroon
@@ -50,7 +50,7 @@ Colombia
 Costa Rica
 Cuba
 Cape Verde,Cabo Verde
-Curaçao
+Curaçao,Curacao
 Christmas Island
 Cyprus
 Czech Republic,Czechia
@@ -97,7 +97,7 @@ Guam
 Guinea-Bissau
 Guyana
 Hong Kong
-Heard Island and McDonald Islands,Argentina
+Heard Island and McDonald Islands
 Honduras
 Croatia
 Haiti
@@ -189,7 +189,7 @@ Portugal
 Palau
 Paraguay
 Qatar
-Réunion
+Réunion,Reunion
 Romania
 Serbia
 Russia
@@ -200,7 +200,7 @@ Seychelles
 Sudan
 Sweden
 Singapore
-Saint Helena,Ascension and Tristan da Cunha
+Saint Helena,Ascension,Tristan da Cunha
 Slovenia
 Svalbard and Jan Mayen
 Slovakia
@@ -210,9 +210,9 @@ Senegal
 Somalia
 Suriname
 South Sudan
-São Tomé and Príncipe
+São Tomé and Príncipe,Sao Tome and Principe
 El Salvador
-Sint Maarten,Saint-Martin
+Saint-Martin,Sint Maarten
 Syria
 Eswatini
 Turks and Caicos Islands
@@ -233,7 +233,7 @@ Taiwan
 Tanzania
 Ukraine
 Uganda
-United States Minor Outlying Islands,United States
+United States,United States Minor Outlying Islands
 United States,United States Minor Outlying Islands
 Uruguay
 Uzbekistan
