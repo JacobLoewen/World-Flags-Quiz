@@ -1,165 +1,124 @@
-img.globe {
-    /* Set up proportionate scaling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background-image: url("GlobeView.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main {
     width: 100%;
-    height: 130%;
-      
-    /* Set up positioning */
-    position: fixed;
-    top: 0;
-    left: 0;
+    max-width: 1000px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#resultText {
+    display: none;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
+.nextButtonBounds {
+    display: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#nextButton {
+    width: 100px;
+    height: 35px;
+}
+
+#worldFlagsText {
+    color: white;
+    font-size: clamp(40px, 8vw, 90px);
+    text-shadow: -2px -2px 0 #000000, 
+                  1px -1px 0 #000000, 
+                 -1px  1px 0 #000000, 
+                  1px  1px 0 #000000;
+    margin: 40px 0 40px;
 }
 
 #worldCountryQuestion {
     display: none;
-    color: #ffffff;
-    text-align: center;
-    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
-    margin-top: -20px;
-    margin-bottom: 20px;
-    font-size: 40px;
+    color: white;
+    font-size: clamp(24px, 5vw, 45px);
+    text-shadow: -1px -1px 0 #000000, 
+                  1px -1px 0 #000000, 
+                 -1px  1px 0 #000000, 
+                  1px  1px 0 #000000;
+    margin: 20px 0;
+}
+
+#worldFlagsText,
+#worldCountryQuestion,
+#resultText {
+    text-shadow:
+        -2px -2px 0 #000,
+         2px -2px 0 #000,
+        -2px  2px 0 #000,
+         2px  2px 0 #000,
+        -2px  0px 0 #000,
+         2px  0px 0 #000,
+         0px -2px 0 #000,
+         0px  2px 0 #000;
 }
 
 #flagImg {
     display: none;
-
-    width: 16.5%;
+    width: 100%;
+    max-width: 350px;
     height: auto;
-      
-    align-self: center;
-    position: relative; 
-    padding-left: 635px;
-    padding-right: 635px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    /* top: 500px; */
-    /* left: 1000px; */
-}
-
-.main {
-    position: relative;
-    width: 1520px;
-}
-
-/* .flag {
-    position: absolute;
-    width: 1520px;
-    size: 400px;
-} */
-
-#worldFlagsText {
-    color: #ffffff;
-    text-align: center;
-    text-shadow: -2px -2px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
-    margin-top: 100px;
-}
-
-#cName {
-    margin-left: 675px;
-    margin-top: 50px;
-    size-adjust: 500px;
-}
-
-#startButton {
-    position: relative;
-    text-align: center;
-    margin-bottom: 10px;
-    width: 90x;
-    height: 30px;
-}
-
-#countriesButton{
-    position: relative;
-    text-align: center;
-    margin-top: 10px;
-    width: 90px;
-    height: 30px;
+    margin: 10px auto 20px;
 }
 
 #text-input {
-    width: 350px;   
-    height: 30px;
+    width: 100%;
+    max-width: 400px;
+    height: 35px;
     font-size: 20px;
     text-align: center;
 }
 
+#startButton,
+#countriesButton {
+    width: 100px;
+    height: 35px;
+    margin-top: 10px;
+}
+
 .startButtonBounds {
     display: block;
-    position: relative;
     text-align: center;
 }
 
 .textBox {
     display: none;
-    position: relative;
     text-align: center;
 }
 
 .countriesButtonBounds {
     display: none;
-    position: relative;
     text-align: center;
-}
-
-
-@media screen and (max-width: 2400px){
-    h1{
-        font-size: 80px;
-    }
-}
-
-@media screen and (max-width: 1200px){
-    h1{
-        font-size: 80px;
-    }
-    #worldFlagsText{
-        margin-right: 500px;
-    }
-}
-
-@media screen and (max-width: 850px){
-    h1{
-        font-size: 80px;
-    }
-    #worldFlagsText{
-        margin-right: 800px;
-    }
-}
-
-@media screen and (max-width: 700px){
-    h1{
-        font-size: 80px;
-    }
-    #worldFlagsText{
-        margin-right: 1000px;
-    }
-}
-
-@media screen and (max-width: 500px){
-    h1{
-        font-size: 40px;
-    }
-    #worldFlagsText{
-        padding-left: -500px;
-        margin-right: 1200px;
-    }
-}
-
-@media screen and (max-width: 300px){
-    h1{
-        font-size: 40px;
-    }
-    #worldFlagsText{
-        /* padding-left: -500px; */
-        margin-right: 1300px;
-    }
-}
-
-@media screen and (max-width: 200px){
-    h1{
-        font-size: 40px;
-    }
-    #worldFlagsText{
-        /* padding-left: -500px; */
-        margin-right: 1400px;
-    }
 }
