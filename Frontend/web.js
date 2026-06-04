@@ -70,13 +70,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 const fileNumber = parseInt(currentFileName.substring(0, 3));
 
                 lines.forEach((line, index) => {
-                    const countryName = line.trim();
+                    const aliases = line
+                        .trim()
+                        .split(",")
+                        .map(alias => alias.trim());
 
                     if (index + 1 === fileNumber) {
-                        correctAnswer = countryName;
+                        correctAnswer = aliases[0];
                     }
 
-                    if (countryName.toLowerCase() === name.toLowerCase()) {
+                    if (aliases.some(alias => alias.toLowerCase() === name.toLowerCase())){
                         found = true;
 
                         if (fileNumber === index + 1) {
